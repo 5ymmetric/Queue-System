@@ -1,40 +1,24 @@
-use kpagilla;
-
-drop table if exists users;
-drop table if exists teach;
-drop table if exists pictures;
-
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS pictures;
 
 CREATE TABLE pictures (
-imageId int not null primary key auto_increment,
-name varchar(255),
-image longblob not null
-)engine=InnoDB,collate=latin1_general_cs;
+  imageId INT AUTO_INCREMENT  PRIMARY KEY,
+  image longblob NOT NULL
+);
 
 CREATE TABLE users (
-    userId INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    username VARCHAR(50) NOT NULL UNIQUE,
-    photoId int not null,
-    password VARCHAR(255) NOT NULL,
-    foreign key (photoId) references pictures(imageID),
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-)engine=InnoDB,collate=latin1_general_cs;
-
+  userId INT AUTO_INCREMENT  PRIMARY KEY,
+  first_name VARCHAR(250) NOT NULL,
+  password VARCHAR(250) NOT NULL,
+  photoId int default null
+);
 
 CREATE TABLE teach (
-    teachId INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    teachName VARCHAR(50) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
-    photoID int not null,
-    startTime time (0) not null,
-    endTime time (0) not null,
-    image blob,
-    foreign key (photoID) references pictures(imageId),
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-)engine=InnoDB,collate=latin1_general_cs;
-
-
-
-
-
-
+  teachId INT AUTO_INCREMENT  PRIMARY KEY,
+  first_name VARCHAR(250) NOT NULL,
+  password VARCHAR(250) NOT NULL,
+  photoId INT default NULL,
+  weekday VARCHAR(250) default NULL,
+  startTime TIME (0) default NULL,
+  endTime time (0) default NULL
+);
