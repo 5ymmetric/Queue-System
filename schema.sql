@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS pictures;
 
 CREATE TABLE pictures (
   imageId INT AUTO_INCREMENT  PRIMARY KEY,
-  image longblob NOT NULL
+  image varbinary(max)
 );
 
 CREATE TABLE users (

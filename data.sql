@@ -1,3 +1,16 @@
+INSERT INTO pictures(image) values
+(FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat.jpeg')),
+(FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(1).jpeg')),
+(FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(2).jpeg')),
+(FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(3).jpeg')),
+(FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(4).jpeg')),
+(FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(5).jpeg')),
+(FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(6).jpeg')),
+(FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(7).jpeg')),
+(FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(8).jpeg')),
+(FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(9).jpeg')),
+(FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(10).jpeg'));
+
 INSERT INTO users (first_name, password) VALUES
 ('Zuzame Watts','zwatts'),
 ('Evie larsen','elarsen'),
