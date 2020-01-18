@@ -2,6 +2,7 @@ use kpagilla;
 
 drop table if exists users;
 drop table if exists teach;
+drop table if exists pictures;
 
 CREATE TABLE users (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -16,6 +17,15 @@ CREATE TABLE teach (
     password VARCHAR(255) NOT NULL,
     startTime time (0) not null,
     endTime time (0) not null,
+    image blob,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE pictures (
+name varchar(255),
+image longblob
+);
+
+
+
 
