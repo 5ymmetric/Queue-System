@@ -1,20 +1,20 @@
-DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS teach;
-DROP TABLE IF EXISTS pictures;
+DROP TABLE IF EXISTS Users;
+DROP TABLE IF EXISTS TA;
+DROP TABLE IF EXISTS Pictures;
 
-CREATE TABLE pictures (
+CREATE TABLE Pictures (
   imageId INT AUTO_INCREMENT  PRIMARY KEY,
   image varbinary(max)
 );
 
-CREATE TABLE users (
+CREATE TABLE Users (
   userId INT AUTO_INCREMENT  PRIMARY KEY,
   first_name VARCHAR(250) NOT NULL,
   password VARCHAR(250) NOT NULL,
   photoId int default null
 );
 
-CREATE TABLE teach (
+CREATE TABLE TA (
   teachId INT AUTO_INCREMENT  PRIMARY KEY,
   first_name VARCHAR(250) NOT NULL,
   password VARCHAR(250) NOT NULL,

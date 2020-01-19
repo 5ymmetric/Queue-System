@@ -1,4 +1,4 @@
-INSERT INTO pictures(image) values
+INSERT INTO Pictures(image) values
 (FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat.jpeg')),
 (FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(1).jpeg')),
 (FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(2).jpeg')),
@@ -11,7 +11,7 @@ INSERT INTO pictures(image) values
 (FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(9).jpeg')),
 (FILE_READ('C:\\Users\\Karthik.P\\Downloads\\cat(10).jpeg'));
 
-INSERT INTO users (first_name, password) VALUES
+INSERT INTO Users (first_name, password) VALUES
 ('Zuzame Watts','zwatts'),
 ('Evie larsen','elarsen'),
 ('Lea Mendez','lmendez'),
@@ -34,7 +34,7 @@ INSERT INTO users (first_name, password) VALUES
 ('Krishna Chan','kchan'),
 ('Kate Flower','kflower');
 
-INSERT INTO teach(first_name, password, photoId, weekday, startTime, endTime) VALUES
+INSERT INTO TA(first_name, password, photoId, weekday, startTime, endTime) VALUES
 ('ABC', '123', 1, 'Wednesday', '11:00:00', '12:00:00'),
 ('Mich Balk','csce155e2019',1,'Monday','08:30:00','10:30:00'),
 ('Hu Phc','csce155e2019',2,'Monday','10:00:00','14:30:00'),
