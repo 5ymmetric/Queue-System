@@ -78,3 +78,11 @@ li {
    margin: 0;
    background-color: white;
  }
+
+ .button-click {
+   font-weight: bold;
+   border: 2px solid green;
+   background: #ffe;
+   border-radius: 5px;
+   text-align: center;
+ }
